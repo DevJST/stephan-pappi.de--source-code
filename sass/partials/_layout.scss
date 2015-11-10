@@ -1,0 +1,861 @@
+// Global 
+
+#main-section {
+ 
+    position: relative;    
+} // r-typo ready
+
+.l-main-section-nav {
+    
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: 1;
+    
+  width: 100%;
+    
+  > a {
+        
+    display: block;
+    float: left;  
+    
+    margin: 2px 0 0 -8px;
+  }
+    
+  > ul {
+        
+    display: none;
+    float: right;
+    margin-top: 50px;
+  /*  position: absolute;
+    right: 0;
+    bottom: 11px; */
+    width: 42%;
+  }
+  
+  @media (min-width: $st-small-breakpoint) {
+   
+    > a {
+      
+      margin: 5px 0 0 -6px;
+    } 
+  }
+  
+  @media (min-width : $st-medium-breakpoint) {
+    
+    > a {
+      
+      margin: 8px 0 0 10px;
+    }
+  }
+  
+  @media (min-width : $st-large-breakpoint) {
+    
+    > a {
+      
+      margin: 20px 0 0 10px;
+    }
+    
+    > ul {
+      
+      display: block;
+    }
+  }
+    
+  @media (min-width : $st-xlarge-breakpoint) {
+            
+    > a {
+       
+      margin: 23px 0 0 70px;
+    }
+    
+    > ul {
+     
+      width: 45%;
+    }
+  }
+  
+  &#welcome-site-main-section-nav {
+    
+    @media (min-width : $st-xlarge-breakpoint) {
+            
+      > ul {
+     
+        width: 50%;
+      }
+    }
+  }
+} // r-typo ready
+
+footer {
+    
+  background-color: $st-color-dark-brown;
+} // r-typo ready
+
+.l-container {
+    
+    width: ( 100 - ( 2 * map-get( $container-side-restrict, "start-point" ) ) )#{"%"};
+    margin: 0;
+    padding: 0 map-get( $container-side-restrict, "start-point" )#{"%"};
+    
+    @media (min-width : $st-small-breakpoint) {
+        
+         width: ( 100 - ( 2 * map-get( $container-side-restrict, "small-breakpoint" ) ) )#{"%"};
+    margin: 0;
+    padding: 0 map-get( $container-side-restrict, "small-breakpoint" )#{"%"};
+    }
+  
+    @media (min-width : $st-medium-breakpoint) {
+        
+        width: map-get( $container-side-restrict, "medium-breakpoint" )#{"px"};
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    @media (min-width : $st-large-breakpoint) {
+        
+        width: map-get( $container-side-restrict, "large-breakpoint" )#{"px"};
+    }
+    
+    @media (min-width : $st-xlarge-breakpoint) {
+        
+        width: map-get( $container-side-restrict, "xlarge-breakpoint" )#{"px"};
+    }
+} // r-typo ready
+
+.l-banner {
+
+    height: 320px;
+    position: relative;
+  
+    overflow: hidden;
+
+    @at-root #welcome-site-banner {
+        
+        background-image: url('../img/welcome_site/banner_bg_sm.jpg');
+        background-size: cover;
+        background-position: 50% 10%;
+    } 
+
+    @at-root #unternehmen-banner {
+
+        background-image: url('../img/unternehmen/banner_bg_sm.jpg');
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
+    @at-root #leistungen-banner {
+
+        background-image: url('../img/leistungen/banner_bg_sm.jpg');
+        background-size: cover;
+        background-position: 50% 30%;
+    }
+
+    @at-root #kontakt-banner {
+
+        background-image: url('../img/kontakt/banner_bg_sm.jpg');
+        background-size: cover;
+        background-position: 40% 50%;
+    }
+    
+    @at-root #galerie-banner {
+
+        background-image: url('../img/galerie/banner_bg_sm.jpg');
+        background-size: cover;
+        background-position: 50% 50%; 
+    }
+  
+    @at-root #impressum-banner {
+      
+      background-image: url('../img/impressum/banner_bg_sm.jpg');
+      background-size: cover;
+      background-position: 50% 50%; 
+    }
+  
+    @media (min-width : 768px) and (max-width : 1023px) {
+      
+      @at-root #welcome-site-banner {
+        
+        background-image: url('../img/welcome_site/banner_bg_md.jpg');
+      } 
+     
+      @at-root #unternehmen-banner {
+
+        background-image: url('../img/unternehmen/banner_bg_md.jpg');
+      }
+
+      @at-root #leistungen-banner {
+
+        background-image: url('../img/leistungen/banner_bg_md.jpg');
+      }
+
+      @at-root #kontakt-banner {
+
+        background-image: url('../img/kontakt/banner_bg_md.jpg');
+        background-position: 50% 50%;
+      }
+      
+      @at-root #galerie-banner {
+
+        background-image: url('../img/galerie/banner_bg_md.jpg'); 
+      }
+      
+      @at-root #impressum-banner {
+      
+        background-image: url('../img/impressum/banner_bg_md.jpg');
+      }
+    }
+  
+    @media (min-width : 1024px) and (max-width : 1439px) {
+      
+      @at-root #welcome-site-banner {
+        
+        background-image: url('../img/welcome_site/banner_bg_lg.jpg');
+      } 
+      
+      @at-root #unternehmen-banner {
+
+        background-image: url('../img/unternehmen/banner_bg_lg.jpg');
+      }
+
+      @at-root #leistungen-banner {
+
+        background-image: url('../img/leistungen/banner_bg_lg.jpg');
+      }
+
+      @at-root #kontakt-banner {
+
+        background-image: url('../img/kontakt/banner_bg_lg.jpg');
+      }
+      
+      @at-root #galerie-banner {
+
+        background-image: url('../img/galerie/banner_bg_lg.jpg'); 
+      }
+      
+      @at-root #impressum-banner {
+      
+        background-image: url('../img/impressum/banner_bg_lg.jpg');
+      }
+    }
+  
+    @media (min-width : 1440px) {
+      
+      @at-root #welcome-site-banner {
+        
+        background-image: url('../img/welcome_site/banner_bg_xlg.jpg');
+      } 
+     
+      @at-root #unternehmen-banner {
+
+        background-image: url('../img/unternehmen/banner_bg_xlg.jpg');
+      }
+
+      @at-root #leistungen-banner {
+
+        background-image: url('../img/leistungen/banner_bg_xlg.jpg');
+      }
+
+      @at-root #kontakt-banner {
+
+        background-image: url('../img/kontakt/banner_bg_xlg.jpg');
+      }
+      
+      @at-root #galerie-banner {
+
+        background-image: url('../img/galerie/banner_bg_xlg.jpg'); 
+      }
+      
+      @at-root #impressum-banner {
+      
+        background-image: url('../img/impressum/banner_bg_xlg.jpg');
+      }
+    }
+  
+    
+    @media (min-width : $st-medium-breakpoint) {
+     
+        height: 420px;
+    }
+    
+    @media (min-width : $st-large-breakpoint) {
+        
+        height: 480px;
+        
+        @at-root #welcome-site-banner {
+            
+          height: 530px;
+          background-position: 70% 0%;
+        } 
+    }
+  
+    @media (min-width : $st-xlarge-breakpoint) {
+      
+      @at-root #welcome-site-banner {
+            
+        height: 560px;
+        
+      } 
+    }
+} // r-typo ready
+
+.l-inline > * { 
+
+    display: inline-block;
+} // r-typo ready
+
+.l-stacked > * {
+
+    display: block;
+} // r-typo ready
+
+.l-boxes-list {
+    
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+    
+  > li {
+
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+ 
+  &#services-list {
+        
+    margin: 0;
+        
+    > li {
+            
+      padding: 1em 0; 
+    }
+        
+    > li:nth-child(even) {
+ 
+      @include background-transparent(#000000, 0.1);
+    }
+  }
+    
+  &#partners-list {
+        
+    margin: 2em 0;
+  }
+    
+  @media (min-width : $st-medium-breakpoint) {
+     
+    &#services-list {
+            
+      > li {
+                
+        padding: 0;
+      }
+    }
+  }
+} // r-typo ready
+
+.l-3-col-table-container {
+     
+  display: table;
+  width: 100%;
+  padding: 0.8em 0; 
+    
+    
+  > div:nth-of-type(1), > div:nth-of-type(3) {
+    
+    display: none;
+  }
+    
+  > div:nth-of-type(2) {
+    
+    display: table-cell;
+    width: 100%;
+    
+    text-align: center;
+    vertical-align: middle;
+  }
+    
+  @media (min-width : $st-large-breakpoint) {
+        
+    padding: 1.2em 0; 
+           
+    > div:nth-of-type(1), > div:nth-of-type(3) {
+    
+      display: table-cell;
+      width: 33.33333333%;
+      vertical-align: middle;
+    }
+    
+    > div:nth-of-type(2) {
+     
+      width: 33.33333333%;
+    }
+    
+    > div:nth-of-type(3) {
+     
+      text-align: right;
+    }
+  }
+} // r-typo ready
+
+.l-full-height {
+
+  height: 100%; 
+}
+
+
+// Welcome site
+
+#welcome-message-section {
+ 
+  width: 100%; 
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  
+  overflow: hidden; // temp for animation
+  
+  @media (min-width : $st-small-breakpoint) {
+        
+    width: 390px; 
+  }
+  
+  @media (min-width : $st-medium-breakpoint) {
+        
+    width: 540px; 
+    bottom: 30px;
+  }
+  
+  @media (min-width : $st-large-breakpoint) {
+        
+    width: 740px; 
+  }
+  
+  @media (min-width : $st-xlarge-breakpoint) {
+        
+    width: 1000px;
+  }
+} // r-typo ready
+
+#welcome-site-main-content-section {
+ 
+  background-image: url(../img/welcome_site/plans.png), url(../img/welcome_site/house_plan.png);
+  
+  background-position: 100% 35%, 100% 99%;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 400px, 220px;
+  
+  @media (min-width : $st-small-breakpoint) {
+    
+    background-position: 100% 30%, 100% 100%;
+    background-size: 400px, 260px;
+  }
+  
+  @media (min-width : $st-medium-breakpoint) {
+    
+    background-position: 100% 26%, 100% 97%;
+    background-size: 500px, 400px;
+  }
+  
+  @media (min-width : $st-large-breakpoint) {
+    
+    background-position: 100% 30%, 100% 100%;
+    background-size: 500px, 400px;
+  }
+  
+  @media (min-width : $st-xlarge-breakpoint) {
+    
+    background-position: 86% 32%, 83% 101%;
+    background-size: 500px, 400px;
+  }
+}
+
+#go-to-contact-section {
+ 
+  text-align: center;
+} // r-typo ready
+
+.l-services-grid {
+    
+  overflow: hidden;
+
+  display: block;
+  margin: 0;
+  padding: 0;
+  
+  @include custom-clearfix;
+
+  $cols-in-row: 2;
+  $cols-side-margin: 0; 
+  $cols-margin-bottom: 0.8em;
+
+  @include percentage-grid-row($cols-in-row, $cols-side-margin);
+  margin-bottom: -$cols-margin-bottom;
+
+  .l-services-grid-col  {
+ 
+    float: left;
+    display: block;
+    margin: 0;
+    padding: 0;      
+
+    @include percentage-grid-col($cols-in-row, $cols-side-margin);
+    margin-bottom: $cols-margin-bottom;
+  }
+  
+  @media (min-width : $st-small-breakpoint) {
+    
+    $cols-in-row: 2;
+    $cols-side-margin: 3; 
+
+    @include percentage-grid-row($cols-in-row, $cols-side-margin);
+    
+    .l-services-grid-col  {
+      
+      @include percentage-grid-col($cols-in-row, $cols-side-margin);
+    }
+  }
+    
+  @media (min-width : $st-medium-breakpoint) {
+        
+    $cols-in-row: 3;
+    $cols-side-margin: 1; 
+        
+    @include percentage-grid-row($cols-in-row, $cols-side-margin);
+        
+      > .l-services-grid-col {
+         
+        @include percentage-grid-col($cols-in-row, $cols-side-margin);
+      }
+  }
+
+  @media (min-width : $st-large-breakpoint) {
+        
+    $cols-in-row: 3;
+    $cols-side-margin: 3; 
+        
+    @include percentage-grid-row($cols-in-row, $cols-side-margin);
+        
+      > .l-services-grid-col {
+         
+        @include percentage-grid-col($cols-in-row, $cols-side-margin);
+      }
+  }
+  
+  @media (min-width : $st-large-breakpoint) {
+        
+    $cols-in-row: 3;
+    $cols-side-margin: 3.5; 
+        
+    @include percentage-grid-row($cols-in-row, $cols-side-margin);
+        
+      > .l-services-grid-col {
+         
+        @include percentage-grid-col($cols-in-row, $cols-side-margin);
+      }
+  }
+} // r-typo ready
+
+.l-welcome-message-left-padding {
+ 
+  padding-left: 5px;
+  
+  @media (min-width : $st-small-breakpoint) {
+         
+    padding-left: 15px; 
+  }
+  
+  @media (min-width : $st-medium-breakpoint) {
+         
+    padding-left: 40px; 
+  }
+  
+  @media (min-width : $st-large-breakpoint) {
+         
+    padding-left: 40px; 
+  }
+  
+  @media (min-width : $st-xlarge-breakpoint) {
+        
+    padding-left: 110px;
+  }
+} // r-typo ready
+
+.l-small-only-clearfix {
+ 
+  @media (max-width : 767px ) {
+    
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.l-from-medium-clearfix {
+ 
+  @media (min-width : $st-medium-breakpoint)  {
+    
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+#list { 
+
+  overflow: hidden;
+    
+  $cols-in-row: 2;
+  $cols-side-margin: 0.5;
+  $cols-margin-bottom: 0.2em;
+    
+  @include percentage-grid-row($cols-in-row, $cols-side-margin);
+  margin-bottom: -$cols-margin-bottom;
+
+  .item {
+ 
+    float: left; 
+    @include percentage-grid-col($cols-in-row, $cols-side-margin);
+    margin-bottom: $cols-margin-bottom;
+  }
+    
+  @media (min-width : $st-small-breakpoint) {
+     
+    $cols-in-row: 2;
+    $cols-side-margin: 1;
+    $cols-margin-bottom: 0.4em;
+    
+    @include percentage-grid-row($cols-in-row, $cols-side-margin);
+    margin-bottom: -$cols-margin-bottom;
+        
+    .item {
+         
+      @include percentage-grid-col($cols-in-row, $cols-side-margin);
+      margin-bottom: $cols-margin-bottom; 
+    }
+  }
+    
+    @media (min-width : $st-medium-breakpoint) {
+        
+      $cols-in-row: 3;
+      $cols-side-margin: 0.6;
+      $cols-margin-bottom: 0.4em;
+        
+      @include percentage-grid-row($cols-in-row, $cols-side-margin);
+      margin-bottom: -$cols-margin-bottom;
+        
+      .item {
+         
+        @include percentage-grid-col($cols-in-row, $cols-side-margin);
+        margin-bottom: $cols-margin-bottom; 
+      }
+    }
+    
+    @media (min-width : $st-large-breakpoint) {
+     
+      $cols-in-row: 4;
+      $cols-side-margin: 0.6;
+      $cols-margin-bottom: 0.5em;
+        
+      @include percentage-grid-row($cols-in-row, $cols-side-margin);
+      margin-bottom: -$cols-margin-bottom;
+        
+      .item {
+            
+        @include percentage-grid-col($cols-in-row, $cols-side-margin);
+        margin-bottom: $cols-margin-bottom; 
+      }
+    }
+    
+    @media (min-width : $st-xlarge-breakpoint) {
+        
+      $cols-in-row: 4;
+      $cols-side-margin: 0.4; 
+      $cols-margin-bottom: 0.6em;
+        
+      @include percentage-grid-row($cols-in-row, $cols-side-margin);
+      margin-bottom: -$cols-margin-bottom;
+        
+      .item {
+         
+          @include percentage-grid-col($cols-in-row, $cols-side-margin);
+          margin-bottom: $cols-margin-bottom;
+      }
+    }
+    
+    @media (min-width : $st-xxlarge-breakpoint) {
+     
+      $cols-margin-bottom: 0.9em;
+        
+      margin-bottom: -$cols-margin-bottom;
+        
+      .item { 
+            
+        argin-bottom: $cols-margin-bottom; 
+      }
+    }
+} // r-typo ready
+
+
+
+// Unternehmen
+
+#icon-anchors-section {
+ 
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  
+  @media (min-width : $st-medium-breakpoint) {
+    
+    right: 10px;
+    bottom: 10px;
+  }
+  
+  @media (min-width : $st-xlarge-breakpoint) {
+   
+    right: 130px;
+    bottom: 20px;
+  }
+}
+
+// Gallery
+
+#gallery-grid {
+  
+  margin: 0;
+  padding: 0;
+  
+  @include custom-clearfix;
+  
+  
+  .gallery-list-item, .gallery-list-item-2x {
+   
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .gallery-list-item,
+  .gallery-list-sizer {
+   
+    width: 50%;
+  }
+   
+  .gallery-list-item-2x {
+ 
+    width: 100%;
+  }
+  
+  @media (min-width : $st-medium-breakpoint) {
+    
+    .gallery-list-item,
+    .gallery-list-sizer {
+   
+      width: 25%;
+     }
+    
+    .gallery-list-item-2x {
+      
+      width: 50%;
+    }
+  }
+  
+  @media (min-width : $st-large-breakpoint) {
+    
+    .gallery-list-item,
+    .gallery-list-sizer {
+   
+      width: 16.666666667%;
+     }
+    
+    .gallery-list-item-2x {
+      
+      width: 33.333333334%;
+    }
+  }
+} // r-typo ready
+
+
+
+// Kontakt
+
+#map-section {
+    
+  padding: 3em 0;
+  background-image: url('../img/kontakt/map_bg.png');
+  background-size: cover;
+  background-position: 0% 50%;
+    
+  @media (min-width : $st-xlarge-breakpoint) {
+     
+    padding: 6em 0;
+  }
+} // r-typo ready
+
+#map {
+    
+  .map-aside {
+        
+    width: 100%;
+    @include custom-clearfix;
+  }
+    
+  .map-body {
+        
+    width: 100%;
+        
+    #map-content {
+         
+      width: 100%;
+      height: 300px;
+    }
+  }
+    
+  @media (min-width : $st-medium-breakpoint) {
+        
+    .map-body {
+            
+      #map-content {
+            
+        height: 380px;
+      } 
+    }
+  }
+    
+  @media (min-width : $st-large-breakpoint) {
+        
+    display: table;
+    width: 100%;
+        
+    @include background-transparent($st-map-contact-gray, 0.66);
+    @include border-radius(90px 0px 0px 90px); 
+        
+    .map-aside {
+        
+      display: table-cell;
+      width: 33.33333333%;
+      vertical-align: middle;
+      text-align: right;
+      padding: 3em 1.8em 0 0;
+    }
+    
+    .map-body {
+        
+      display: table-cell;
+      width: 66.66666666%;
+            
+      #map-content {
+            
+        height: 410px;
+      } 
+    }
+  }
+} // r-typo ready
+
+
+
+// Unternehmen
+
+// Leistungen

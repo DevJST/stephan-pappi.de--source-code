@@ -1,0 +1,55 @@
+.is-dropdown-menu-open {
+   
+  display: block !important;
+}
+
+.is-services-box-checked {
+    
+  padding: 1em 0;
+    
+  .services-box-body {
+               
+    .services-box-content {
+     
+      display: block;
+
+      @include animation-name(fadeIn);
+      @include animation-duration(2s);
+    }
+  }
+    
+  .services-box-feature {
+        
+    .services-box-img-dark {
+         
+      display: none;
+    }
+        
+    .services-box-img-light {
+         
+      display: inline-block;
+      @include animation-name(fadeIn);
+      @include animation-duration(1.5s);
+    }
+  }
+}
+
+.is-checked-main-site-service {
+    
+  cursor:pointer;
+    
+  .welcome-site-service-img-dark {
+
+    display: none;
+  }
+
+  .welcome-site-service-img-light {
+
+    display: block;
+  }
+            
+  .welcome-site-service-body {
+                
+    background-image: url(../img/welcome_site/pink-light.png);
+  }
+}

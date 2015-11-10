@@ -1,0 +1,33 @@
+@mixin percentage-grid-row ($grid-cols, $grid-margin) {
+   
+    width: (($grid-margin*2) + 100)#{"%"};
+    margin-left: -($grid-margin)#{"%"};
+}
+
+@mixin percentage-grid-col ($grid-cols, $grid-margin) {
+    
+    $col-width: (100/$grid-cols)-($grid-margin*2);
+      
+    width: $col-width#{"%"};   
+    margin-left: #{$grid-margin}#{"%"};
+    margin-right: #{$grid-margin}#{"%"};
+}
+
+@mixin background-transparent($color, $alpha) {
+  
+  $rgba: rgba($color, $alpha);
+  $ie-hex-str: ie-hex-str($rgba);
+  background-color: transparent;
+  background-color: $rgba;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
+  zoom: 1;
+}
+
+@mixin custom-clearfix {
+  
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

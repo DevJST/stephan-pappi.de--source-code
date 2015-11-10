@@ -1,0 +1,241 @@
+body, section, article, 
+header, footer,
+h1, h2, h3, h4, h5, h6,
+p,
+img, a {
+    
+  margin: 0;
+  padding: 0;
+}
+
+div {
+ 
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+// Fonts
+
+body {
+  
+  font-size: 100%;
+  
+  color: #000000;
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, .h1, .h2, .h3, .h4,
+.site-wrapper-menu > li > a, .site-wrapper-sub-menu > li > a, .main-section-menu > li > a,
+.panel .panel-heading,
+.creme-btn, .double-border-button,
+.tintes-pic-box .tintes-pic-text,
+.sub-site-banner-caption .sub-site-banner-caption-shadow, .sub-site-banner-caption .sub-site-banner-caption-content
+{
+  
+  font-family: 'Vidaloka', serif;
+  font-weight: 500;
+}
+
+.dropdown-menu > li > a,
+.footer-nav, .footer-company-address, .services-btn {
+ 
+  font-family: 'Vidaloka', serif;
+  font-weight: 400;
+}
+
+p, .p {
+ 
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+
+
+// Typography
+
+h1, .h1 {
+  
+  font-size: 2em; // 2x body copy size = 32px 
+  line-height: 1.0em; 
+  
+  @media (min-width: $st-medium-breakpoint) {
+   
+    font-size: 2.5em; // 2.5x body copy size = 40px 
+  }
+  
+  @media (min-width: $st-large-breakpoint) {
+    
+    font-size: 2.75em; // 2.75x body copy size = 44px
+  }
+}
+
+h2, .h2 {
+  
+  font-size: 1.625em;  // 1.625x body copy size = 26px */
+  line-height: 1.15384615em;  // 30px / 26px */
+  
+  @media (min-width: $st-medium-breakpoint) {
+   
+    font-size: 2em;  // 2x body copy size = 32px
+    line-height: 1.25em;
+  }
+  
+  @media (min-width: $st-large-breakpoint) {
+   
+    font-size: 2.25em; // 2.25x body copy size = 36px 
+    line-height: 1.25em;
+  }
+}
+
+h3, .h3 {
+  
+  font-size: 1.3125em;
+  line-height: 1,142857143em;
+  
+  @media (min-width: $st-small-breakpoint) {
+  
+    font-size: 1.375em; // 1.375x body copy size = 22px
+    line-height: 1.13636364em; // 25px / 22px
+  }
+  
+  @media (min-width: $st-medium-breakpoint) {
+   
+    font-size: 1.5em; // 1.5x body copy size = 24px
+    line-height: 1.25em;
+  }
+  
+  @media (min-width: $st-large-breakpoint) {
+   
+    font-size: 1.75em;  // 1.75x body copy size = 28px 
+    line-height: 1.25em;
+  }
+}
+
+h4, .h4 {
+  
+  font-size: 1.125em; // 1.125x body copy size = 18px
+  line-height: 1.11111111em;
+  
+  @media (min-width: $st-medium-breakpoint) {
+   
+    line-height: 1.22222222em; // 22px / 18px 
+  }
+}
+
+p, .p {
+  
+  font-size: 0.9em; // equivalent to 16px 
+  line-height: 1.25em; // equivalent to 20px 
+  
+ /* @media (min-width: $st-small-breakpoint) {
+   
+    font-size: 1em; // equivalent to 16px 
+  } */
+  
+  @media (min-width: $st-medium-breakpoint) {
+   
+      line-height: 1.375em; // equivalent to 22px 
+  }
+}
+
+blockquote {
+  
+  font-size: 1.25em; /* 20px / 16px */
+  line-height: 1.25em; /* 25px / 20px */
+  
+  @media (min-width: $st-medium-breakpoint) {
+   
+    font-size: 1.5em; /* 24px / 16px = */
+    line-height: 1.45833333em; /* 35px / 24px */
+  }
+}
+
+small {
+ 
+  font-size: 70%;
+}
+
+
+.site-wrapper-menu > li > a {
+ 
+  font-size: 0.9em;
+}
+
+.site-wrapper-sub-menu > li > a {
+  
+  font-size: 0.7em;
+}
+
+.site-right-bar-sp-address {
+ 
+  font-size: 0.95em;
+}
+
+.main-section-menu > li > a {
+ 
+  font-size: 1.1em;
+  letter-spacing: 0.05em;
+}
+
+.dropdown-menu > li > a {
+ 
+  font-size: 0.8em;
+}
+
+.welcome-message-content  {
+  
+  font-size: 0.73em;
+  font-weight: 700;
+}
+
+.welcome-site-service .welcome-site-service-header {
+ 
+  line-height: 1,1em;
+  
+  @media (min-width: $st-medium-breakpoint) {
+  
+    line-height: 1.20em;
+  }
+  
+}
+
+.tintes-pic-box .tintes-pic-text {
+  
+  font-size: 0.9em;
+  
+  @media (min-width : $st-small-breakpoint) {
+    
+    font-size: 1.2em;
+  }
+  
+  @media (min-width : $st-large-breakpoint) {
+    
+    font-size: 1.3em;
+  }
+}
+
+.footer-nav, .footer-company-address {
+  
+  font-size: 0.90em;
+  line-height: 1.5em;
+  letter-spacing: 0.03em;
+  
+  @media (min-width: $st-xlarge-breakpoint) {
+    
+    font-size: 0.95em;
+    line-height: 1.55em;
+  }
+}
+
+.services-btn  {
+  
+  font-size: 0.76em;
+  font-weight: 400;
+  
+  @media (min-width : $st-medium-breakpoint) {
+         
+    font-size: 0.78em;
+  }
+}
+ 
